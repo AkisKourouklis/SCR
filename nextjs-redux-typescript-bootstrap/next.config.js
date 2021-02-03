@@ -1,6 +1,6 @@
-const withPlugins = require("next-compose-plugins")
+const withPlugins = require('next-compose-plugins')
 
-const dotenv = require("dotenv")
+const dotenv = require('dotenv')
 
 dotenv.config()
 
@@ -9,7 +9,7 @@ const plugins = []
 const nextConfig = {
   env: {},
   images: {
-    domains: ["localhost"],
+    domains: ['localhost'],
   },
 }
 

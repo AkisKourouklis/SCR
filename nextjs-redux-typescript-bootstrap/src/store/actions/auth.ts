@@ -92,7 +92,7 @@ export const AuthLogin = (identifier: string, password: string) => {
         createError({
           message: JSON.stringify(errMsg),
           description: errorId,
-          type: 'error',
+          type: 'danger',
         })
       )
       createServerError({ message: errMsg, uuid: errorId })
@@ -121,7 +121,7 @@ export const AuthRegister = ({ username, email, password, router }: IRegister) =
           createError({
             message: JSON.stringify(errMsg),
             description: errorId,
-            type: 'error',
+            type: 'danger',
           })
         )
         createServerError({ message: errMsg, uuid: errorId })
@@ -134,7 +134,7 @@ export const AuthRegister = ({ username, email, password, router }: IRegister) =
           createError({
             message: JSON.stringify(errMsg),
             description: errorId,
-            type: 'error',
+            type: 'danger',
           })
         )
         createServerError({ message: errMsg, uuid: errorId })
