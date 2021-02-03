@@ -1,3 +1,5 @@
+import { IUser } from '../store/actions/auth'
+
 export interface State {
   auth: {
     isLoading: boolean
