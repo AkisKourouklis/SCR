@@ -4,32 +4,8 @@ import { apiUrl } from '../../config/vars'
 import { AUTH_FAIL, AUTH_LOGOUT, AUTH_REGISTER, AUTH_START, AUTH_SUCCESS } from '../types'
 import { createError as createServerError } from '../../utils/error'
 import { createError } from './error'
-import { NextRouter } from 'next/router'
 import { AnyAction, Dispatch } from 'redux'
-
-export interface IRegister {
-  username: string
-  email: string
-  password: string
-  router: NextRouter
-}
-export interface IUser {
-  jwt: string
-  user: {
-    _id: string
-    blocked: boolean
-    confirmed: boolean
-    createdAt: string
-    email: string
-    role: {
-      _id: string
-      description: string
-      name: string
-      type: string
-    }
-    username: string
-  }
-}
+import { IRegister, IUser } from '../../types/auth'
 
 const authStart = (): AnyAction => ({
   type: AUTH_START,

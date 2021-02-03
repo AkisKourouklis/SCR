@@ -4,9 +4,8 @@ import { apiUrl } from '../../config/vars'
 import { AUTH_FAIL, AUTH_LOGOUT, AUTH_REGISTER, AUTH_START, AUTH_SUCCESS } from '../types'
 import { createError as createServerError } from '../../utils/error'
 import { createError } from './error'
-import { NextRouter } from 'next/router'
 import { AnyAction, Dispatch } from 'redux'
-import { IUser } from '../../types/auth'
+import { IRegister, IUser } from '../../types/auth'
 
 const authStart = (): AnyAction => ({
   type: AUTH_START,

@@ -1,4 +1,4 @@
-import { IUser } from '../store/actions/auth'
+import { IUser } from './auth'
 
 export interface State {
   auth: {

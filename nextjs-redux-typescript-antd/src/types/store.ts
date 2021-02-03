@@ -1,3 +1,5 @@
+import { IUser } from './auth'
+
 export interface State {
   auth: {
     isLoading: boolean
