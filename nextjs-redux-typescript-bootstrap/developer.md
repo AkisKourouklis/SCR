@@ -8,10 +8,10 @@ The tech stack I use in this project is:
 
 - Next.js
 - Redux
-- AntD
+- React Bootstrap
 - Eslint
 - Prettier
-- Less
+- sass
 - Husky
 
 ## Application Stracture
@@ -33,9 +33,8 @@ The tech stack I use in this project is:
 ─ **types.ts** _(All the redux types)_
 ─ **store.ts** _(Store index file)_
 ├── **styles** _(All the styles)_
-─ **custom.less** _(AntD, custom variables file.)_
-─ **variables.less** _(Every new veriable goes in here.)_
-─ **global.less** _(Here you import all the other less files.)_
+─ **variables.sass** _(Every new veriable goes in here.)_
+─ **global.sass** _(Here you import all the other sass files.)_
 ├── **types** _(All the types)_
 ├── **utils** _(Custom hooks, functions, special requests etc)_
 ─**.env.local** _(Enviroment variables)_
@@ -93,7 +92,7 @@ If you want to use Graphql I recommend using this package [graphql-request](http
 ## Important Things
 
 - **DO NOT WRITE INLINE STYLING**
-- **IMPORT ALL STYLES THROUGH GLOBAL.LESS**
+- **IMPORT ALL STYLES THROUGH GLOBAL.sass**
 - **REMEMBER BEM**
 - **ONLY FETCH DATA IN PAGES**
 - **MAKE ALL REQUESTS FROM REDUX**
